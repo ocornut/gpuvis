@@ -1903,9 +1903,9 @@ static void remove_event_filter( char ( &dest )[ T ], const char *fmt, ... )
     for ( int i = 6; i >= 1; i-- )
     {
         // Remove '&& (expr)' strings
-        remove_substrings( dest, "&& %.*s%s%.*s", i, "((((((", expr, i, "))))))" );
+        //remove_substrings( dest, "&& %.*s%s%.*s", i, "((((((", expr, i, "))))))" );
         // Remove '(expr) &&'
-        remove_substrings( dest, "%.*s%s%.*s &&", i, "((((((", expr, i, "))))))" );
+        //remove_substrings( dest, "%.*s%s%.*s &&", i, "((((((", expr, i, "))))))" );
     }
 
     // Remove 'expr'
